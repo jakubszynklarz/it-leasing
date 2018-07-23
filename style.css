@@ -1,0 +1,365 @@
+.loading{
+    background: #0b0b0b;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.loading-page{
+    background: #161616;
+    width: 100%;
+    height: 100vh;
+    
+}
+.loading-page .counter h1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 260px;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html{
+    font-family: Circular Std, sans-serif;
+}
+body{
+    width: 100%
+}
+.backToTop {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #2B9DFF;
+    opacity: 1;
+    -webkit-transition: visibility 0.2s, opacity 0.2s;
+    transition: visibility 0.2s, opacity 0.2s;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    cursor: pointer;
+   
+}
+.backToTop.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+i {
+    border: 5px solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+h1{
+    font-size: 48px;
+    font-weight: 100;
+    color: #2B9DFF;
+}
+h3{
+    font-size: 24px;
+}
+.btnOutline{
+    display: block;
+    text-decoration: none;
+    color: #2B9DFF;
+    border: 2px solid #2B9DFF;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    font-size: 22px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btnOutline:hover{
+    color: white;
+    border: 2px solid #2B9DFF;
+    background-color: #2B9DFF;
+}
+nav{
+    line-height: 150px;
+    text-align: right;
+}
+nav a{
+    text-decoration: none;
+    color: #202427;
+    font-size: 20px;
+    font-weight: 700;
+}
+nav a:nth-child(1){
+    float: left;
+}
+nav a:nth-child(2){
+    margin-top: 20px;
+    float: left;
+}
+nav a img{
+    vertical-align: middle;
+}
+nav a span{
+    background-color: #2B9DFF;
+    padding: 5px 15px;
+    border-radius: 1000px;
+    font-weight: 100;
+    color: white;
+    margin-left: 10px;
+    
+}
+.sidebar{
+    width: 70px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    background: #fff;
+    z-index: 99999;
+    transition: .3s;
+    
+}
+.sidebarOpen{
+    width: 70px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    background: #fff;
+    z-index: 99999;
+    transition: .3s;
+    padding: 40px;
+}
+.nav{
+    transition: .3s;
+}
+.navContainer{
+    position: absolute;
+    top: 50%;
+}
+.navContainer div{
+    height: 5px;
+    background: #2B9DFF;;
+    margin: 5px 25px;
+    border-radius: 24px;
+    transition: .3s;
+    width: 20px;
+}
+header{
+    height: 1000px;
+    min-height: 1000px;
+    padding: 0 5%;
+    background-image: url(images/background_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+header h1{
+    width: 35%;
+    margin: 2em 0 0 0;
+}
+
+.team{
+    text-align: center;
+    margin: 10em 0 3em 0;
+    padding: 0 5%;
+    background-image: url(images/background_team.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.team h1{
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+.members{
+    display: flex;
+    justify-content: center;
+}
+.person{
+    margin: 0 30px;
+    color: #202427;
+}
+.person h3{
+    margin-bottom: 5px;
+}
+
+.about{
+    margin-left: 70px;
+    padding: 0 5%;
+    background-image: url(images/background_about.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+    height: 900px;
+    min-height: 900px;
+}
+.about h1{
+    padding-top: 300px;
+}
+.socialMedia{
+    position: absolute;
+    top: 80%;
+}
+.fa {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+  }
+  .fa:hover {
+    opacity: 0.6;
+}
+  .fa-facebook {
+    color: grey;
+  }
+  .fa-twitter {
+    color: grey;
+  }
+  .fa-linkedin {
+    color: grey;
+  }
+.about h1, .icons{
+    margin-left: 50%;
+}
+
+.contact{
+    background-image: url(images/background_job.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 80%;
+    height: 1000px;
+    min-height: 1000px;
+}
+.contact h1{
+    width: 40%;
+    margin: 2em 0 0 0;
+    padding-top: 400px;
+    padding-left: 5%;
+}
+footer{
+    padding: 0 5%;
+    margin-bottom: 40px;
+    color: #2B9DFF;
+    padding-top: 10%;
+}
+
+footer p, .footerPages{
+    display: inline-block;
+}
+.footerPages{
+    float: right;
+}
+.footerPages a{
+    text-decoration: none;
+    font-weight: 100;
+    color: #2B9DFF;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1000px){
+    header{
+        height: 1750px;
+        min-height: 1750px;
+        background-image: url(images/mobile_background_header.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+    }
+    header h1{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .team{
+        margin: 3em 0 3em 0;
+        background-image: url(images/mobile_background_team.png);
+        background-position: top;
+    }
+    .team h1{
+        width: 100%;
+    }
+    .about{
+        background-image: url(images/mobile_background_about.png);
+        background-size: contain;
+        height: 900px;
+        min-height: 900px;
+        overflow-y: visible; 
+        margin-bottom: 300px;
+    }
+    .about h1{
+        padding-top: 1000px;
+        
+    }
+    .about h1, .icons{
+        margin-left: 0;
+    }
+    .contact{
+        padding: 5%;
+        background-image: url(images/mobile_background_job.png);
+        background-size: contain;
+        height: 900px;
+        min-height: 900px;
+        overflow-y: visible;
+    }
+    .contact h1{
+        width: 100%;
+        padding-top: 1000px;
+    }
+    footer{
+        padding-top: 500px;
+        text-align: center;
+    }
+    .footerPages{
+        visibility: hidden;
+    }
+    footer p, .footerPages{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        height: 1450px;
+        min-height: 1450px;
+        
+    }
+    header h1{
+        margin: 1em 0 0 0;
+    }
+    .about h1{
+        padding-top: 800px;
+    }
+    .contact h1{
+        padding-top: 800px;
+    }
+    .members{
+        flex-direction: column;
+    }
+    .person{
+        margin-top: 30px;
+    }
+    .fa{
+        padding: 20px;
+        font-size: 20px;
+        width: 20px;
+        border-radius: 100px;
+        margin: 0px 5px;
+    }
+    footer{
+        padding-top: 600px;
+    }
+    
+}
