@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    
+    var body = document.querySelector(".content");
     var counter = 0;
     var c = 0;
     var i = setInterval(function(){
@@ -14,6 +14,7 @@ $(document).ready(function(){
                 clearInterval(i);
                 var loading = document.querySelector(".loading");
                 loading.remove();
+                body.classList.remove("hidden");
                                 
             }
             
