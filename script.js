@@ -64,15 +64,22 @@ $(document).ready(function(){
 
     social = document.querySelector(".socialMedia");
     nav = document.querySelector(".sidebar");
+    menu = document.querySelector(".navContainer");
+    menuOpen = document.querySelector(".navContainerOpen");
     nav.addEventListener("mouseover", function(){
             nav.className = "sidebarOpen";
             social.classList.remove("hidden");
+            menu.classList.add("hidden");
+            menuOpen.classList.remove("hidden");
     }, false);
 
     
     nav.addEventListener("mouseout", function (){
         nav.className = "sidebar";
         social.classList.add("hidden");
+        menuOpen.classList.add("hidden");
+        menu.classList.remove("hidden");
+        
     }, false);
 
 
