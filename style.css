@@ -332,6 +332,9 @@ footer p, .footerPages{
         padding: 15px;
        
       }
+      .sidebar{
+          visibility: hidden;
+      }
     .team{
         margin: 3em 0 3em 0;
         background-image: url(images/mobile_background_team.png);
@@ -347,6 +350,7 @@ footer p, .footerPages{
         min-height: 900px;
         overflow-y: visible; 
         margin-bottom: 300px;
+        margin-left: 0px;
     }
     .about h1{
         padding-top: 1000px;
@@ -400,8 +404,12 @@ footer p, .footerPages{
         padding: 15px;
        
       }
+      .sidebar{
+        visibility: hidden;
+    }
     .about h1{
         padding-top: 800px;
+        margin-left: 0px;
     }
     .contact h1{
         padding-top: 800px;
